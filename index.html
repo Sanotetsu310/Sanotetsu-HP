@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- ヘッダーエリア -->
+   <header style="background-color: #1a365d; color: white; padding: 30px 20px; text-align: center;">
+    
+    <h1 style="font-size: 54px; margin: 0 0 10px 0; letter-spacing: 4px;">佐 野 急 行 鐵 道</h1>
+    
+    <p style="font-size: 18px; margin: 0; opacity: 0.9;">〜あの空に、虹をかけよう〜</p>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main style="padding: 20px; max-width: 800px; margin: 0 auto;">
+        
+        <!-- 運行情報（JSで動かす用） -->
+        <div style="border: 2px solid #e53e3e; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
+            <h3 style="margin-top: 0; color: #e53e3e;">◇運行情報◇</h3>
+            <p id="status">最新の運行情報を得るにはボタンをクリック</p>
+            <button onclick="checkStatus()">運行情報を更新</button>
+        </div>
+        
+        <H2>ミスがあっても隠蔽しない。少しずつでもいいから、一緒に歩もう。</H2> 
+        <p>「低クオリティのままでいいんだよ。無理に成長して隠蔽するよりずっとまともだし、えらいよ。」</p>
+         <p>By サノス・ナオ</p>
+        
+    <!-- 車両紹介 -->
+        <h2>佐野鐡グループ車両紹介</h2>
+        <div style="background: #fffce0; padding: 15px; border-left: 5px solid #c81e1e;">
+            <h3>EC 1030系</h3>
+            <p>佐野鐡線の電化区間での運用に入る通勤車で、普通から特急まで幅広い運用を持つ。</p>
+        </div>
+       
+       
+        <div style="background: #fffce0; padding: 15px; border-left: 5px solid #c81e1e;">
+            <h3>DC 3680系</h3>
+            <p>佐野鐡線の非電化区間での運用に入る近郊車で、主に普通や快速、準急の運用を持つ。</p>
+        </div>
+    </main>
+
+    <h2>路線図・駅情報</h2>
+<div style="background: #ffffff; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 30px;">
+    <p>佐野急行鐵道線とその直通先の路線図です。画像をクリックすると拡大してご覧いただけます。PDF版はダウンロードして印刷も可能です。</p>
+
+    <div style="text-align: center; margin-bottom: 20px;">
+        <a href="rosenzu.jpg" target="_blank">
+            <img src="rosenzu.jpg" alt="佐野急行鐵道 路線図" style="width: 100%; max-width: 600px; height: auto; border: 1px solid #cbd5e0; border-radius: 4px;">
+        </a>
+        <p style="font-size: 14px; color: #718096; margin-top: 5px;">※拡大するには画像をクリック</p>
+    </div>
+
+    <div style="text-align: center;">
+        <a href="rosenzu.pdf" download="佐野急行鐵道_路線図.pdf" style="display: inline-block; background-color: #3182ce; color: white; padding: 12px 24px; text-align: center; text-decoration: none; font-weight: bold; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            📄 PDF形式で路線図をダウンロード
+        </a>
+    </div>
+</div>
+
+<!-- JavaScriptのプログラム -->
+    <script>
+        function checkStatus() {
+            // ボタンを押した時に動くプログラム
+            document.getElementById("status").innerText = "【平常運転】現在、全線で15分以上の遅延は発生していません。";
+        }
+    </script>
+</body>
+</html>
