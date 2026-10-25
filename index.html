@@ -1,72 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SANOTEK</title>
 </head>
-<body>
+<body style="font-family: sans-serif; background-color: #fffaf0; color: #2d3748; margin: 0; padding: 0; line-height: 1.6;">
 
-    <!-- ヘッダーエリア -->
-   <header style="background-color: #1a365d; color: white; padding: 30px 20px; text-align: center;">
-    
-    <h1 style="font-size: 54px; margin: 0 0 10px 0; letter-spacing: 4px;">佐 野 急 行 鐵 道</h1>
-    
-    <p style="font-size: 18px; margin: 0; opacity: 0.9;">〜あの空に、虹をかけよう〜</p>
+    <header style="background: linear-gradient(135deg, #cc1e1e 0%, #dc143c 100%); color: white; padding: 40px 20px; text-align: center; border-bottom: 6px solid #ecc94b; box-shadow: 0 4px 15px rgba(203,30,30,0.2);">
+        <h1 style="font-size: 42px; margin: 0; letter-spacing: 4px; font-weight: 900; font-style: italic;">SANOTEK</h1>
+        <p style="font-size: 14px; margin: 8px 0 0 0; opacity: 0.95; font-weight: bold; letter-spacing: 1px;">〜ようこそ。また誰かがここを見つけました。〜</p>
     </header>
 
-    <!-- メインコンテンツ -->
-    <main style="padding: 20px; max-width: 800px; margin: 0 auto;">
+
+    <main style="padding: 40px 20px; max-width: 800px; margin: 0 auto;">
         
-        <!-- 運行情報（JSで動かす用） -->
-        <div style="border: 2px solid #e53e3e; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
-            <h3 style="margin-top: 0; color: #e53e3e;">◇運行情報◇</h3>
-            <p id="status">最新の運行情報を得るにはボタンをクリック</p>
-            <button onclick="checkStatus()">運行情報を更新</button>
+ 
+        <div style="background: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; border-top: 4px solid #ecc94b; margin-bottom: 40px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h2 style="margin-top: 0; color: #000000; font-size: 20px; font-weight: 900;">ここはhtmlとJavaScriptだけで動いている何もないところだ。</h2>
+            <p style="margin: 10px 0 5px 0; color: #4a5568;">なぜなら私のクソみたいな技術力だとこれしか扱えないからだ。</p>
+            <p style="margin: 0; color: #4a5568;">あと見てもわかる通り、デザインセンスも欠如している。</p>
         </div>
-        
-        <H2>ミスがあっても隠蔽しない。少しずつでもいいから、一緒に歩もう。</H2> 
-        <p>「低クオリティのままでいいんだよ。無理に成長して隠蔽するよりずっとまともだし、えらいよ。」</p>
-         <p>By サノス・ナオ</p>
-        
-    <!-- 車両紹介 -->
-        <h2>佐野鐡グループ車両紹介</h2>
-        <div style="background: #fffce0; padding: 15px; border-left: 5px solid #c81e1e;">
-            <h3>EC 1030系</h3>
-            <p>佐野鐡線の電化区間での運用に入る通勤車で、普通から特急まで幅広い運用を持つ。</p>
-        </div>
+
        
-       
-        <div style="background: #fffce0; padding: 15px; border-left: 5px solid #c81e1e;">
-            <h3>DC 3680系</h3>
-            <p>佐野鐡線の非電化区間での運用に入る近郊車で、主に普通や快速、準急の運用を持つ。</p>
-        </div>
+        <section>
+    
+            <div style="margin-bottom: 25px;">
+                <div style="display: flex; flex-direction: column;">
+                    
+                   
+                    <div style="padding-left: 55px; margin-bottom: 2px;">
+                        <h2 style="font-size: 22px; color: #cc1e1e; margin: 0; font-style: italic; letter-spacing: 2px; font-weight: 900; line-height: 1.2;">
+                            ARTICLE
+                        </h2>
+                    </div>
+
+                    
+                    <div style="margin-top: -24px; pointer-events: none;">
+                        <svg viewBox="0 0 700 32" style="width: 100%; height: 32px; display: block;" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="fadeLine" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#cc1e1e" />
+                                    <stop offset="35%" stop-color="#ecc94b" />
+                                    <stop offset="70%" stop-color="#ecc94b" stop-opacity="0.8" />
+                                    <stop offset="100%" stop-color="#ecc94b" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                            
+                            
+                            <polygon points="12,2 17,2 7,24 2,24" fill="#ecc94b" />
+                            
+                           
+                            <path d="M 23 2 L 35 2 L 24 24 L 700 24 L 700 28 L 19 28 L 11 28 Z" fill="url(#fadeLine)" />
+                            
+                            
+                            <polygon points="41,2 46,2 36,22 31,22" fill="#ecc94b" />
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- 記事カード一覧 -->
+            <div style="display: flex; flex-direction: column; gap: 18px;">
+                
+                <!-- 記事カード 1 -->
+                <a href="kiji1.html" style="text-decoration: none; color: inherit;">
+                    <div style="background: #ffffff; padding: 20px; border-left: 6px solid #cc1e1e; border-top: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; border-radius: 0 8px 8px 0; display: flex; justify-content: space-between; align-items: center; gap: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.03); transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='translateX(6px) scale(1.01)'; this.style.boxShadow='0 8px 20px rgba(204,30,30,0.15)'; this.style.borderColor='#cc1e1e';" onmouseout="this.style.transform='translateX(0) scale(1)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.03)'; this.style.borderColor='#e2e8f0';">
+                        
+                        <!-- 左側：テキスト -->
+                        <div style="flex: 1;">
+                            <span style="font-size: 11px; color: #cc1e1e; font-weight: 900; letter-spacing: 1px; text-transform: uppercase;">2026.10.25 / LAUNCH</span>
+                            <h3 style="margin: 6px 0 6px 0; color: #1a202c; font-size: 18px; font-weight: 900; letter-spacing: 0.5px;">試験投稿</h3>
+                            <p style="margin: 0; font-size: 13px; color: #4a5568; line-height: 1.5;">問題なんて何もないよ 結構けっこういけるもんね</p>
+                        </div>
+
+                        <!-- 右側：写真（shiken.jpg） -->
+                        <div style="flex-shrink: 0; overflow: hidden; border-radius: 4px;">
+                            <img src="shiken.jpg" alt="サムネイル画像" style="width: 110px; height: 75px; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.08)';" onmouseout="this.style.transform='scale(1)';">
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+        </section>
     </main>
 
-    <h2>路線図・駅情報</h2>
-<div style="background: #ffffff; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 30px;">
-    <p>佐野急行鐵道線とその直通先の路線図です。画像をクリックすると拡大してご覧いただけます。PDF版はダウンロードして印刷も可能です。</p>
+        <section style="margin-top: 50px; padding-top: 30px; border-top: 1px dashed #e2e8f0; text-align: center;">
+            <p style="font-size: 13px; color: #a0aec0; font-weight: bold; letter-spacing: 1px; margin-bottom: 15px; text-transform: uppercase;">
+                このページの作者のSNS
+            </p>
+            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                
+                <!-- X (旧Twitter) -->
+                <a href="https://x.com/Sanotetsu310" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; color: #1a202c; border: 1px solid #e2e8f0; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='translateY(-2px) scale(1.02)'; this.style.borderColor='#cc1e1e'; this.style.boxShadow='0 6px 15px rgba(204,30,30,0.12)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.borderColor='#e2e8f0'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.02)';">
+                    <span style="font-size: 16px;">𝕏</span>
+                    <span>X (Twitter)</span>
+                </a>
 
-    <div style="text-align: center; margin-bottom: 20px;">
-        <a href="rosenzu.jpg" target="_blank">
-            <img src="rosenzu.jpg" alt="佐野急行鐵道 路線図" style="width: 100%; max-width: 600px; height: auto; border: 1px solid #cbd5e0; border-radius: 4px;">
-        </a>
-        <p style="font-size: 14px; color: #718096; margin-top: 5px;">※拡大するには画像をクリック</p>
-    </div>
+                <!-- Discord -->
+                <a href="https://discord.com/invite/Swu8GmfmTJ" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; color: #1a202c; border: 1px solid #e2e8f0; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='translateY(-2px) scale(1.02)'; this.style.borderColor='#5865F2'; this.style.boxShadow='0 6px 15px rgba(88,101,242,0.15)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.borderColor='#e2e8f0'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.02)';">
+                    <span style="color: #5865F2; font-weight: 900;">#</span>
+                    <span>Discord（サーバー）</span>
+                </a>
 
-    <div style="text-align: center;">
-        <a href="rosenzu.pdf" download="佐野急行鐵道_路線図.pdf" style="display: inline-block; background-color: #3182ce; color: white; padding: 12px 24px; text-align: center; text-decoration: none; font-weight: bold; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            📄 PDF形式で路線図をダウンロード
-        </a>
-    </div>
-</div>
+            </div>
 
-<!-- JavaScriptのプログラム -->
-    <script>
-        function checkStatus() {
-            // ボタンを押した時に動くプログラム
-            document.getElementById("status").innerText = "【平常運転】現在、全線で15分以上の遅延は発生していません。";
-        }
-    </script>
+          
+            <p style="font-size: 12px; color: #a0aec0; margin-top: 30px;">
+                このページは2026年にSANOTEKが勝手に作りました。
+            </p>
+        </section>
 </body>
 </html>
